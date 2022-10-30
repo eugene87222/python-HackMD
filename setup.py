@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='pyHackMD',
+    name='HackMD',
     version='1.0',
     license='MIT',
     author='Eugene Yang',
