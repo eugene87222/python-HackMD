@@ -1,3 +1,14 @@
+# Table of Contents
+- [What's this](#whats-this)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Basic Usage](#bacis-usage)
+        - [User API](#user-api)
+        - [User Notes API](#user-notes-api)
+        - [Teams API](#teams-api)
+        - [Team Notes API](#team-notes-api)
+
 # What's this
 
 A Python interface for HackMD API
@@ -17,7 +28,7 @@ pip install HackMD
 
 ## Basic Usage
 
-Let's create an API object before everything start.
+Let's create an API object before everything starts.
 
 ```python
 from HackMD import API
