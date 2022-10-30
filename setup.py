@@ -7,7 +7,7 @@ setup(
     author='Eugene Yang',
     author_email='eugene87222@gmail.com',
     packages=find_packages('pyHackMD'),
-    url='https://github.com/eugene87222/python-HackMD',
+    url='https://github.com/eugene87222/pyHackMD',
     keywords='HackMD API',
     install_requires=[
         'requests',
