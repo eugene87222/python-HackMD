@@ -31,7 +31,7 @@ pip install HackMD
 Let's create an API object before everything starts.
 
 ```python
-from HackMD import API
+from pythonHackMD import API
 api = API('<token>')
 ```
 
