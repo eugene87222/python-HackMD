@@ -8,8 +8,8 @@ def readme():
 
 setuptools.setup(
     name='HackMD',
-    version='0.0.1',
-    description='A Python interface to HackMD API',
+    version='0.1.0',
+    description='A Python interface for HackMD API',
     long_description=readme(),
     long_description_content_type='text/markdown',
     author='Eugene Yang',
