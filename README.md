@@ -23,7 +23,7 @@ A Python interface for HackMD API
 ## Installation
 
 ```shell
-pip install HackMD
+pip install python-HackMD
 ```
 
 ## Basic Usage
@@ -31,7 +31,7 @@ pip install HackMD
 Let's create an API object before everything starts.
 
 ```python
-from pythonHackMD import API
+from PyHackMD import API
 api = API('<token>')
 ```
 
