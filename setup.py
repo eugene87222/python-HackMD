@@ -7,8 +7,8 @@ def readme():
 
 
 setuptools.setup(
-    name='HackMD',
-    version='0.1.1',
+    name='pythonHackMD',
+    version='1.0.0',
     description='A Python interface for HackMD API',
     long_description=readme(),
     long_description_content_type='text/markdown',
@@ -25,5 +25,5 @@ setuptools.setup(
     install_requires=[
         'requests'
     ],
-    url='https://github.com/eugene87222/pyHackMD',
+    url='https://github.com/eugene87222/pythonHackMD',
 )
