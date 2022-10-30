@@ -1,17 +1,29 @@
-from setuptools import setup, find_packages
+import setuptools
 
-setup(
+
+def readme():
+    with open('README.md', 'r') as fp:
+        return fp.read()
+
+
+setuptools.setup(
     name='HackMD',
-    version='1.0.0',
-    license='MIT',
+    version='0.0.0',
+    description='A Python interface to HackMD API',
+    long_description=readme(),
+    long_description_content_type='text/markdown',
     author='Eugene Yang',
     author_email='eugene87222@gmail.com',
-    packages=find_packages('src'),
-    package_dir={'': 'src'},
-    url='https://github.com/eugene87222/pyHackMD',
-    keywords='HackMD API',
-    install_requires=[
-        'requests',
+    license="MIT",
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
     ],
-
+    keywords='HackMD API',
+    packages=setuptools.find_packages(),
+    install_requires=[
+        'requests'
+    ],
+    url='https://github.com/eugene87222/pyHackMD',
 )
