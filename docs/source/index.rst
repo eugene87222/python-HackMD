@@ -6,17 +6,12 @@
 Welcome to python-HackMD's documentation!
 =========================================
 
-.. .. toctree::
-..    :maxdepth: 2
-..    :caption: Contents:
-
-..    modules
-
 .. toctree::
    :maxdepth: 4
    :caption: Contents:
 
    PyHackMD
+
 
 Indices and tables
 ==================
