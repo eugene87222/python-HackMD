@@ -4,3 +4,4 @@ dist
 _*
 build
 generated
+unittest
