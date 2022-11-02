@@ -10,7 +10,7 @@ Welcome to python-HackMD's documentation!
    :maxdepth: 4
    :caption: Contents:
 
-   PyHackMD
+   modules
 
 
 Indices and tables
