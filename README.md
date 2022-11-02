@@ -11,8 +11,7 @@
 
 # What's this
 
-A Python interface for HackMD API  
-Read the full docs on [ReadTheDocs](https://python-hackmd.readthedocs.io/en/latest/)
+`python-HackMD` is a Python interface for HackMD API. Read the full docs on [ReadTheDocs](https://python-hackmd.readthedocs.io/en/latest/).
 
 # Getting Started
 
