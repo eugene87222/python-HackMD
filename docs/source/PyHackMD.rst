@@ -1,21 +1,21 @@
 PyHackMD package
 ================
 
-Submodules
-----------
+.. Submodules
+.. ----------
 
-PyHackMD.api module
--------------------
+.. PyHackMD.api module
+.. -------------------
 
 .. automodule:: PyHackMD.api
    :members:
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
+.. Module contents
+.. ---------------
 
-.. automodule:: PyHackMD
-   :members:
-   :undoc-members:
-   :show-inheritance:
+.. .. automodule:: PyHackMD
+..    :members:
+..    :undoc-members:
+..    :show-inheritance:

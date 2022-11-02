@@ -50,7 +50,7 @@ class API():
         '''Get user information
 
         :return: dict on success, otherwise None
-        :rtype: dict or None
+        :rtype: dict | None
         '''
         full_api = self.base_api + 'me'
         res = self.__request(self.__Method.GET, full_api)
@@ -60,7 +60,7 @@ class API():
         '''Get a history of read notes
 
         :return: dict on success, otherwise None
-        :rtype: dict or None
+        :rtype: dict | None
         '''
         full_api = self.base_api + 'history'
         res = self.__request(self.__Method.GET, full_api)
@@ -72,7 +72,7 @@ class API():
         '''Get the list of persoanl notes
 
         :return: dict on success, otherwise None
-        :rtype: dict or None
+        :rtype: dict | None
         '''
         full_api = self.base_api + 'notes'
         res = self.__request(self.__Method.GET, full_api)
@@ -83,7 +83,7 @@ class API():
 
         :param str note_id: note ID, can be found using `get_notes()`
         :return: dict on success, otherwise None
-        :rtype: dict or None
+        :rtype: dict | None
         '''
         full_api = self.base_api + 'notes/' + note_id
         res = self.__request(self.__Method.GET, full_api)
@@ -103,7 +103,7 @@ class API():
         :param str write_perm: write permission of the personal note ('owner'|'signed_in'|'guest')
         :param str comment_perm: comment permission of the personal note ('disable'|'forbidden'|'owner'|'signed_in_users'|'everyone')
         :return: dict on success, otherwise None
-        :rtype: dict or None
+        :rtype: dict | None
         '''
         full_api = self.base_api + 'notes'
         data = {
@@ -130,12 +130,12 @@ class API():
         :param read_perm: read permission of the personal note ('owner'|'signed_in'|'guest')
         :param write_perm: write permission of the personal note ('owner'|'signed_in'|'guest')
         :param comment_perm: comment permission of the personal note ('disable'|'forbidden'|'owner'|'signed_in_users'|'everyone')
-        :type content: str or None
-        :type read_perm: str or None
-        :type write_perm: str or None
-        :type comment_perm: str or None
+        :type content: str | None, optional
+        :type read_perm: str | None, optional
+        :type write_perm: str | None, optional
+        :type comment_perm: str | None, optional
         :return: 'Accept' on success, otherwise None
-        :rtype: str or None
+        :rtype: str | None
         '''
         full_api = self.base_api + 'notes/' + note_id
         data = {
@@ -154,7 +154,7 @@ class API():
 
         :param str note_id: note ID, can be found using `get_notes()`
         :return: empty string on success, otherwise None
-        :rtype: str or None
+        :rtype: str | None
         '''
         full_api = self.base_api + 'notes/' + note_id
         res = self.__request(self.__Method.DELETE, full_api)
@@ -167,7 +167,7 @@ class API():
 
         :param str note_id: note ID, can be found using `get_notes()`
         :return: dict on success, otherwise None
-        :rtype: dict or None
+        :rtype: dict | None
         '''
         full_api = self.base_api + 'teams'
         res = self.__request(self.__Method.GET, full_api)
@@ -178,7 +178,7 @@ class API():
 
         :param str team_path: team path, can be found using `get_teams()`
         :return: dict on success, otherwise None
-        :rtype: dict or None
+        :rtype: dict | None
         '''
         full_api = self.base_api + 'teams/' + team_path + '/notes'
         res = self.__request(self.__Method.GET, full_api)
@@ -189,7 +189,7 @@ class API():
 
         :param str note_id: note ID, can be found using `get_team_notes()`
         :return: dict on success, otherwise None
-        :rtype: dict or None
+        :rtype: dict | None
         '''
         return self.get_note(note_id)
 
@@ -208,7 +208,7 @@ class API():
         :param str write_perm: write permission of the team note ('owner'|'signed_in'|'guest')
         :param str comment_perm: comment permission of the team note ('disable'|'forbidden'|'owner'|'signed_in_users'|'everyone')
         :return: dict on success, otherwise None
-        :rtype: dict or None
+        :rtype: dict | None
         '''
         full_api = self.base_api + 'teams/' + team_path + '/notes'
         data = {
@@ -236,12 +236,12 @@ class API():
         :param read_perm: read permission of the team note ('owner'|'signed_in'|'guest')
         :param write_perm: write permission of the team note ('owner'|'signed_in'|'guest')
         :param comment_perm: comment permission of the team note ('disable'|'forbidden'|'owner'|'signed_in_users'|'everyone')
-        :type content: str or None
-        :type read_perm: str or None
-        :type write_perm: str or None
-        :type comment_perm: str or None
+        :type content: str | None, optional
+        :type read_perm: str | None, optional
+        :type write_perm: str | None, optional
+        :type comment_perm: str | None, optional
         :return: 'Accept' on success, otherwise None
-        :rtype: str or None
+        :rtype: str | None
         '''
         full_api = self.base_api + 'teams/' + team_path + '/notes/' + note_id
         data = {
@@ -261,7 +261,7 @@ class API():
         :param str team_path: team path, can be found using `get_teams()`
         :param str note_id: note ID, can be found using `get_team_notes()`
         :return: empty string on success, otherwise None
-        :rtype: str or None
+        :rtype: str | None
         '''
         full_api = self.base_api + 'teams/' + team_path + '/notes/' + note_id
         res = self.__request(self.__Method.DELETE, full_api)
