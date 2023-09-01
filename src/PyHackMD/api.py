@@ -252,8 +252,8 @@ class API():
             'permalink': ''
         }
         data = self.__remove_none(data)
-        res = self.__request(self.__Method.PATCH, full_api)
-        return self.__get_result(res)
+        res = self.__request(self.__Method.PATCH, full_api, data)
+        return self.__get_result(res, json_format=False)
 
     def delete_team_note(self, team_path: str, note_id: str):
         '''Delete a team note
