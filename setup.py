@@ -8,7 +8,7 @@ def readme():
 
 setuptools.setup(
     name='python-HackMD',
-    version='1.0.1',
+    version='1.0.3',
     description='A Python interface for HackMD API',
     long_description=readme(),
     long_description_content_type='text/markdown',
